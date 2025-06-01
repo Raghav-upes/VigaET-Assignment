@@ -1,0 +1,34 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UXML/FloatingWindow.uss?fileID=7433441132597879392&amp;guid=c11122e832d3e68468372be96fedfb28&amp;type=3#FloatingWindow" />
+    <ui:VisualElement name="Container" style="flex-grow: 1; padding-top: 50px; padding-right: 50px; padding-bottom: 50px; padding-left: 50px; width: 100%; height: 100%; justify-content: center; align-self: auto; align-content: auto; align-items: flex-end; background-color: rgb(17, 24, 39);">
+        <ui:Button name="Video" triple-click-selects-line="false" tabindex="100" enabled="true" icon-image="project://database/Assets/_Heathen%20Engineering/Assets/UX/Icons/Flat%20Icons%20[Free]/Free%20Flat%20Arrow%207%20E%20Icon%201.png?fileID=2800000&amp;guid=3087e03bc70105741b4628756117d189&amp;type=3#Free Flat Arrow 7 E Icon 1" style="position: absolute; top: 70px; left: 50px; right: 390px; bottom: 70px; background-color: rgb(0, 0, 0); background-image: url(&quot;project://database/Assets/Video/Video.renderTexture?fileID=8400000&amp;guid=0308c543ad9d44f4aa3bb8bc49de9329&amp;type=2#Video&quot;); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;" />
+        <ui:VisualElement name="FloatingWindow" style="flex-grow: 1; width: 350px; height: 550px; max-height: 590px; -unity-background-image-tint-color: rgb(29, 36, 50); background-color: rgb(29, 36, 50); border-top-left-radius: 14px; border-top-right-radius: 14px; border-bottom-right-radius: 14px; border-bottom-left-radius: 14px; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; justify-content: center; align-content: stretch; align-self: auto; align-items: stretch; scale: 0.8 0.8; right: -30px; border-left-color: rgba(75, 85, 99, 0.5); border-right-color: rgba(75, 85, 99, 0.5); border-top-color: rgba(75, 85, 99, 0.5); border-bottom-color: rgba(75, 85, 99, 0.5); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;">
+            <ui:VisualElement name="TopHeading" style="flex-grow: 1; width: 100%; height: 50px; max-height: 29px; flex-direction: row; justify-content: space-between; align-items: center;">
+                <ui:VisualElement name="MyIcon" style="flex-grow: 1; height: 30px; width: 143px; max-width: 143px; justify-content: flex-start; align-items: center; flex-direction: row;">
+                    <ui:VisualElement name="VoiceIcon" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/_Heathen%20Engineering/Assets/UX/Icons/Flat%20Icons%20[Free]/Free%20Flat%20Person%20Icon.png?fileID=2800000&amp;guid=cac9f704575bbe744b68791d16b1806a&amp;type=3#Free Flat Person Icon&quot;); width: 50px; height: 50px; max-width: 30px; max-height: 30px; margin-bottom: 2px;" />
+                    <ui:Label text="VoiceChat&#10;" style="color: rgb(255, 255, 255); font-size: 18px; margin-left: 12px; margin-bottom: 0; padding-bottom: 0; align-content: flex-end;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Live" style="flex-grow: 1; height: 30px; width: 22px; max-width: 64px; justify-content: flex-start; align-items: center; flex-direction: row;">
+                    <ui:VisualElement name="VoiceIcon" style="flex-grow: 1; background-image: none; width: 50px; height: 50px; max-width: 10px; max-height: 10px; margin-bottom: -8px; background-color: rgb(25, 245, 43); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; justify-content: space-between; align-items: center; transition-property: all; transition-duration: 0.5s; transition-timing-function: ease; transition-delay: 0s;" />
+                    <ui:Label text="Live&#10;" style="color: rgb(159, 159, 159); font-size: 18px; margin-left: 12px; margin-bottom: 0; padding-bottom: 0; align-content: flex-end; height: 30px; max-height: 30px; margin-top: 9px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="ListItems" style="flex-grow: 1; height: 350px; max-height: 350px; margin-top: 15px; margin-right: 0; margin-bottom: 10px; margin-left: 0; justify-content: flex-start; align-items: center;">
+                <ui:VisualElement name="LocalPlayer" class="items" style="flex-grow: 1;" />
+                <ui:VisualElement name="OtherPlayer1" class="items" style="flex-grow: 1;" />
+                <ui:VisualElement name="OtherPlayer2" class="items" style="flex-grow: 1;" />
+                <ui:VisualElement name="OtherPlayer3" class="items" style="flex-grow: 1;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="LineBreak" style="flex-grow: 1; background-color: rgba(141, 141, 141, 0.44); width: 100%; max-height: 1px;" />
+            <ui:VisualElement name="RoomCode_Mic" style="flex-grow: 1; height: 60px; max-height: 60px; margin-top: 20px; align-items: center; flex-direction: row; justify-content: space-between;">
+                <ui:Label text="Room: #" name="RoomCode" style="color: rgb(159, 159, 159); margin-left: 0; padding-left: 0; font-size: 16px;" />
+                <ui:Button name="Mic" style="background-color: rgb(34, 197, 94); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; width: 60px; max-height: 60px; height: 60px; margin-right: 0; justify-content: center; align-items: center;">
+                    <ui:VisualElement name="MicIcon" style="flex-grow: 1; width: 80%; max-height: 80%; background-image: url(&quot;project://database/Assets/_Heathen%20Engineering/Assets/UX/Icons/Flat%20Icons%20[Free]/Free%20Flat%20Mic%20Icon.png?fileID=2800000&amp;guid=f2f9800a1d8f6624db87fcc401513e95&amp;type=3#Free Flat Mic Icon&quot;);" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement name="Number_of_user" style="flex-grow: 1; margin-top: 20px; align-items: center; justify-content: center; max-height: 30px; align-content: flex-end;">
+                <ui:Label text="0 out 4 users connected" name="UsersCount" style="color: rgb(159, 159, 159);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

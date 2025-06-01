@@ -1,0 +1,47 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UXML/FloatingWindow.uss?fileID=7433441132597879392&amp;guid=c11122e832d3e68468372be96fedfb28&amp;type=3#FloatingWindow" />
+    <ui:VisualElement name="MainContainer" class="main-container" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 100%; height: 100%; max-height: 100%; max-width: 100%; min-width: 100%; min-height: 100%;">
+        <ui:VisualElement name="Background" class="background" style="background-color: rgb(17, 24, 39); background-image: url(&quot;project://database/Assets/_Heathen%20Engineering/Assets/UX/Icons/Flat%20Icons%20[Free]/Free%20Flat%20Gradient%20Circle%20Icon.png?fileID=2800000&amp;guid=e4bf43d6d1e92494f952cf4372e91e8f&amp;type=3#Free Flat Gradient Circle Icon&quot;);">
+            <ui:VisualElement name="BackgroundGradient" class="background-gradient" style="top: 0; left: 2px; background-image: url(&quot;project://database/Assets/_Heathen%20Engineering/Assets/UX/Icons/Flat%20Icons%20[Free]/Free%20Flat%20Gradient%20Circle%20Icon.png?fileID=2800000&amp;guid=e4bf43d6d1e92494f952cf4372e91e8f&amp;type=3#Free Flat Gradient Circle Icon&quot;); -unity-background-image-tint-color: rgb(17, 24, 39);" />
+            <ui:VisualElement name="BlurCircle1" class="blur-circle blur-circle-1" style="background-image: url(&quot;project://database/Assets/_Heathen%20Engineering/Assets/UX/Icons/Flat%20Icons%20[Free]/Free%20Flat%20Gradient%20Circle%20Icon.png?fileID=2800000&amp;guid=e4bf43d6d1e92494f952cf4372e91e8f&amp;type=3#Free Flat Gradient Circle Icon&quot;);" />
+            <ui:VisualElement name="BlurCircle2" class="blur-circle blur-circle-2" style="background-image: url(&quot;project://database/Assets/_Heathen%20Engineering/Assets/UX/Icons/Flat%20Icons%20[Free]/Free%20Flat%20Gradient%20Circle%20Icon.png?fileID=2800000&amp;guid=e4bf43d6d1e92494f952cf4372e91e8f&amp;type=3#Free Flat Gradient Circle Icon&quot;);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ContentContainer" class="content-container">
+            <ui:VisualElement name="HeaderSection" class="header-section">
+                <ui:VisualElement name="LogoIcon" class="logo-icon" style="background-size: 45px 35px; width: 77px; background-image: url(&quot;project://database/Assets/Logo/Movie%20Colab%20Logo.png?fileID=2800000&amp;guid=c497b57e0844bdd4db996161b15ca7f2&amp;type=3#Movie Colab Logo&quot;); background-color: rgb(21, 35, 60);" />
+                <ui:Label text="Movie Colab" name="Title" class="title" />
+                <ui:Label text="Join or create a collaborative space" name="Subtitle" class="subtitle" />
+            </ui:VisualElement>
+            <ui:VisualElement name="FormCard" class="form-card">
+                <ui:VisualElement name="FormFields" class="form-fields" style="margin-bottom: 13px;">
+                    <ui:VisualElement name="ConnectStatus" style="flex-grow: 1; flex-direction: row; align-items: center; justify-content: center; padding-bottom: 4px; margin-bottom: 8px;">
+                        <ui:VisualElement name="ConnectionDot" style="flex-grow: 1; width: 5px; max-width: 8px; max-height: 8px; min-height: 8px; background-color: rgb(160, 160, 160); padding-right: 0; margin-right: 8px; border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%;" />
+                        <ui:Label text="Ready to connect" name="ConnectionStatusLabel" class="field-label" style="-unity-text-align: upper-center; font-size: 12px; margin-top: 0; padding-top: 0; color: rgb(160, 160, 160); flex-direction: row; align-items: center; justify-content: center; padding-bottom: 0; margin-bottom: 0;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="NameFieldContainer" class="field-container">
+                        <ui:Label text="Your Name" name="NameLabel" class="field-label" />
+                        <ui:VisualElement name="NameInputContainer" class="input-container">
+                            <ui:VisualElement name="NameIcon" class="input-icon user-icon" style="background-image: url(&quot;project://database/Assets/_Heathen%20Engineering/Assets/UX/Icons/Flat%20Icons%20[Free]/Free%20Flat%20Person%20Icon.png?fileID=2800000&amp;guid=cac9f704575bbe744b68791d16b1806a&amp;type=3#Free Flat Person Icon&quot;);" />
+                            <ui:TextField placeholder-text="Enter your display name" name="NameInput" class="text-input" style="color: rgb(255, 255, 255); padding-bottom: 0; padding-top: 0;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="RoomCodeFieldContainer" class="field-container">
+                        <ui:Label text="Room Code" name="RoomCodeLabel" class="field-label" />
+                        <ui:VisualElement name="RoomCodeInputContainer" class="input-container">
+                            <ui:VisualElement name="RoomCodeIcon" class="input-icon hash-icon" style="background-image: url(&quot;project://database/Assets/_Heathen%20Engineering/Assets/UX/Icons/Flat%20Icons%20[Free]/Free%20Flat%20Connection%204%20Icon.png?fileID=2800000&amp;guid=a4452197917f106499fe55c7b5705314&amp;type=3#Free Flat Connection 4 Icon&quot;);" />
+                            <ui:TextField placeholder-text="Enter room code or create new" name="RoomCodeInput" class="text-input" style="padding-bottom: 0; padding-top: 0;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="ButtonsContainer" class="buttons-container">
+                    <ui:Button text="Create New Room" name="CreateRoomButton" enabled="true" class="action-button create-button">
+                        <ui:VisualElement name="CreateButtonIcon" class="button-icon plus-icon" style="background-image: url(&quot;project://database/Assets/_Heathen%20Engineering/Assets/UX/Icons/Flat%20Icons%20[Free]/Free%20Flat%20Hat%20Solid%20Blank%20Icon.png?fileID=2800000&amp;guid=9a363b86d8dc1f9469388fb98608bb7b&amp;type=3#Free Flat Hat Solid Blank Icon&quot;); position: relative; left: -91px; top: 0; width: 15px; height: 15px;" />
+                    </ui:Button>
+                    <ui:Button text="Join Room" name="JoinRoomButton" class="action-button join-button">
+                        <ui:VisualElement name="JoinButtonIcon" class="button-icon login-icon" style="left: -59px; background-image: url(&quot;project://database/Assets/_Heathen%20Engineering/Assets/UX/Icons/Flat%20Icons%20[Free]/Free%20Flat%20Exit%20Door%20Icon.png?fileID=2800000&amp;guid=b1b7bca5eb410a54a82c3d0e0173e568&amp;type=3#Free Flat Exit Door Icon&quot;); top: 2px;" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

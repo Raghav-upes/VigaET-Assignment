@@ -1,0 +1,107 @@
+.notifications-container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    translate: -50% 0;
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+}
+.notification {
+    background-color: #233759;
+    border-color: #416EA9;
+    border-width: 2px;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 40px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    translate: 0 -20px;
+    transition-property: opacity, translate;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.notification-visible {
+    opacity: 1;
+    translate: 0 0;
+}
+
+.notification-join .notification-message {
+    color: #4CAF50;
+    font-size: 14px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.notification-leave .notification-message {
+    color: #F44336;
+    font-size: 14px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.notification-info .notification-message {
+    color: #2196F3;
+    font-size: 14px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.notification-warning .notification-message {
+    color: #FF9800;
+    font-size: 14px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.notification-error .notification-message {
+    color: #F44336;
+    font-size: 14px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.notification-slide-in {
+    opacity: 0;
+    translate: 0 -30px;
+    transition-property: opacity, translate;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+}
+
+.notification-slide-in-active {
+    opacity: 1;
+    translate: 0 0;
+}
+
+.notification-fade-out {
+    opacity: 1;
+    translate: 0 0;
+    transition-property: opacity, translate;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.notification-fade-out-active {
+    opacity: 0;
+    translate: 0 -20px;
+}
+
+.notification:hover {
+    background-color: rgba(35, 55, 89, 0.9);
+    border-color: #5A8BC7;
+    transition-property: background-color, border-color;
+    transition-duration: 0.2s;
+}
+
+.notification-message {
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-grow: 1;
+}

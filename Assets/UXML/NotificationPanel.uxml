@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UXML/NotificationStyles.uss?fileID=7433441132597879392&amp;guid=0ceffe9c6cd85334c930a7976b3530cd&amp;type=3#NotificationStyles" />
+    <ui:VisualElement name="NotificationsContainer" class="notifications-container">
+        <ui:VisualElement name="Notification" class="notification notification-join notification-visible" style="background-color: rgb(35, 55, 89);">
+            <ui:Label text="Alex joined" name="NotificationMessage" class="notification-message" style="-unity-text-align: middle-center;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
